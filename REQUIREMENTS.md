@@ -8,6 +8,7 @@ These requirements must be fulfilled within a month of boarding FoC
 - Must use Travis for automated testing on commits
 - Must use Coveralls to track code coverage
 - Must provide composer support
+- Must exist at packagist onder the `FriendsOfCake` user
 - Must be tested on `$min_php_version` and up to PHP 5.5
 - Must have well documented code (docblocks, @annotations etc)
 - Must have well documented user guide with examples
