@@ -2,7 +2,7 @@
 
 - Compatible with CakePHP 2.2 and higher
 - Comform to the CakePHP code guidelines (yes, even the german ones)
-- Have at least 75% code coverage on the code base
+- Have at least 75% code coverage
 - Tested on $min_php_version and up to PHP5.5
 - Well documented code (docblocks, @annotations etc)
 - Well documented user guide with examples
