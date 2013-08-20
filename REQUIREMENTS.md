@@ -11,8 +11,8 @@
 - Must have well documented user guide with examples
 - Must have high code quality (e.g. defensive coding, check return values and more)
 - Must convert any GitHub wiki pages to gh-pages or README.md
-- Must Comply with semantic versioning
-- Must use GitHub releases for tags
+- Must comply with semantic versioning
+- Must use GitHub releases for tags, with descriptive changelogs
 
 # Bonus goals 
 
