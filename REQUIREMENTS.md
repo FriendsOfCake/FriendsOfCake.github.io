@@ -24,6 +24,9 @@ Can be fulfilled whenever, and even never
 - Should support PHP 5.3
 - Should have real documentation in gh-pages branch (url will be `friendsofcake.com/<project name>`on GH)
 - Should have 90%+ code coverage
+- Should do primary development should be done through Pull Requests
+- Should publish a roadmap
+- Should use milestones for issues
 
 # After becoming a FoC project
 
