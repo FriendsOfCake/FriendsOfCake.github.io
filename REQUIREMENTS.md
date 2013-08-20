@@ -1,4 +1,4 @@
-# Requirements to become a FoC
+# Requirements to become a FoC project
 
 - Compatible with CakePHP 2.2 and higher
 - Comform to the CakePHP code guidelines (yes, even the german ones)
