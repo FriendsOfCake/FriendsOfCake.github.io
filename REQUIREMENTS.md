@@ -1,4 +1,4 @@
-# Boarding requirements to become a FoC project
+# Boarding requirements for a FoC project
 
 These requirements must be fulfilled within a month of boarding FoC
 
