@@ -12,6 +12,7 @@
 - High code quality (e.g. defensive coding, check return values and more)
 - GitHub wiki pages must be converted to gh-pages or README.me
 - Comply with semantic versioning
+- Must use GitHub releases for tags
 
 # Bonus goals 
 
