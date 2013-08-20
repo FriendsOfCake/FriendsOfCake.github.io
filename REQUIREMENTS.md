@@ -17,6 +17,7 @@
 
 - Support PHP 5.3
 - Real documentation in gh-pages branch (url will be `friendsofcake.com/<project name>`on GH)
+- 90%+ code coverage
 
 # After becoming a FoC project
 
