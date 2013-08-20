@@ -10,6 +10,8 @@
 - Well documented code (docblocks, @annotations etc)
 - Well documented user guide with examples
 - High code quality (e.g. defensive coding, check return values and more)
+- Any GitHub wiki pages must be converted to gh-pages or README.me
+- Comply with semantic versioning
 
 # Bonus goals 
 
