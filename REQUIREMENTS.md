@@ -6,7 +6,7 @@
 - Use travis for automated testing on commits
 - Use coveralls to track code coverage
 - Provide composer support
-- Tested on $min_php_version and up to PHP5.5
+- Tested on `$min_php_version` and up to PHP 5.5
 - Well documented code (docblocks, @annotations etc)
 - Well documented user guide with examples
 - High code quality (e.g. defensive coding, check return values and more)
