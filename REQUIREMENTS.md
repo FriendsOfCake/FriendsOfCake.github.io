@@ -6,6 +6,7 @@
 - Tested on $min_php_version and up to PHP5.5
 - Well documented code (docblocks, @annotations etc)
 - Well documented user guide with examples
+- High code quality (e.g. defensive coding, check return values and more)
 
 # Bonus goals 
 
