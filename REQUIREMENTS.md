@@ -1,7 +1,7 @@
 # Requirements to become a FoC project
 
 - Must be compatible with CakePHP 2.2 and higher
-- Must comform to the CakePHP code guidelines (yes, even the german ones)
+- Must comform to the CakePHP code guidelines
 - Must Have at least 75% code coverage
 - Must use Travis for automated testing on commits
 - Must use Coveralls to track code coverage
