@@ -14,7 +14,7 @@
 # Bonus goals 
 
 - Support PHP 5.3
-- Real documentation in gh-pages branch (url will be friendsofcake.com/<project name> on GH)
+- Real documentation in gh-pages branch (url will be `friendsofcake.com/<project name>`on GH)
 
 # After becoming a FoC project
 
