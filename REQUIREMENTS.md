@@ -1,4 +1,6 @@
-# Requirements to become a FoC project
+# Boarding requirements to become a FoC project
+
+These requirements must be fulfilled within a month of boarding FoC
 
 - Must be compatible with CakePHP 2.3 and higher
 - Must comform to the CakePHP code guidelines
@@ -16,10 +18,14 @@
 
 # Bonus goals 
 
+Can be fulfilled whenever, and even never
+
 - Should support PHP 5.3
 - Should have real documentation in gh-pages branch (url will be `friendsofcake.com/<project name>`on GH)
 - Should have 90%+ code coverage
 
 # After becoming a FoC project
+
+Ongoing requirement to remain in FoC
 
 - Must be well supported (should not have old tickets laying around)
