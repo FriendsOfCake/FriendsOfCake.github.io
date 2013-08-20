@@ -15,7 +15,8 @@ These requirements must be fulfilled within a month of boarding FoC
 - Must have high code quality (e.g. defensive coding, check return values and more)
 - Must convert any GitHub wiki pages to gh-pages or README.md
 - Must comply with semantic versioning
-- Must use GitHub releases for tags, with descriptive changelogs
+- Must use GitHub releases & git tags, with descriptive changelogs
+- Must use `master` for stable release, `develop` for intigration branch and feature branches for the rest
 
 # Bonus goals 
 
