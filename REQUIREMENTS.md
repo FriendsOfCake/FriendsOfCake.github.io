@@ -2,6 +2,8 @@
 
 These requirements must be fulfilled within a month of boarding FoC
 
+If your project doesn't fulfill all these requirements yet, just poke us, and we will try to help you with everything we can :)
+
 - Must be compatible with CakePHP 2.3 and higher
 - Must conform to the CakePHP code guidelines
 - Must have at least 75% code coverage
