@@ -3,12 +3,12 @@
 These requirements must be fulfilled within a month of boarding FoC
 
 - Must be compatible with CakePHP 2.3 and higher
-- Must comform to the CakePHP code guidelines
-- Must Have at least 75% code coverage
+- Must conform to the CakePHP code guidelines
+- Must have at least 75% code coverage
 - Must use Travis for automated testing on commits
 - Must use Coveralls to track code coverage
 - Must provide composer support
-- Must exist at packagist onder the `FriendsOfCake` user
+- Must exist at packagist under the `FriendsOfCake` user
 - Must be tested on `$min_php_version` and up to PHP 5.5
 - Must have well documented code (docblocks, @annotations etc)
 - Must have well documented user guide with examples
@@ -16,7 +16,7 @@ These requirements must be fulfilled within a month of boarding FoC
 - Must convert any GitHub wiki pages to gh-pages or README.md
 - Must comply with semantic versioning
 - Must use GitHub releases & git tags, with descriptive changelogs
-- Must use `master` for stable release, `develop` for intigration branch and feature branches for the rest
+- Must use `master` for stable release, `develop` for integration branch and feature branches for the rest
 - Must not have failing tests in `master` and `develop`
 
 # Bonus goals 
