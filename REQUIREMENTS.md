@@ -18,6 +18,7 @@ These requirements must be fulfilled within a month of boarding FoC
 - Must use GitHub releases & git tags, with descriptive changelogs
 - Must use `master` for stable release, `develop` for integration branch and feature branches for the rest
 - Must not have failing tests in `master` and `develop`
+- Must use MIT license
 
 # Bonus goals 
 
