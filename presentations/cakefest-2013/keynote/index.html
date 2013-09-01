@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CakeFest 2013</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>What kept us busy</h1>
+					<h3>A quick summary of a year working in CakePHP</h3>
+					<p>
+						<small>CakeFest 2013 <a href="http://twitter.com/jose_zap">@jose_zap</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>CakePHP is community driven</h2>
+					<p>
+						This is both good and bad. There is a slower pace in what we do, but the result is a consequence of what the community is
+						actually asking for based of the collective input.
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>We grow older, but wiser</h2>
+						<p>In general, people working in any organization...</p>
+					</section>
+					<section>
+						<h2>Join</h2>
+					</section>
+					<section>
+						<h2>Get passionate about it</h2>
+					</section>
+					<section>
+						<h2>Get experience</h2>
+					</section>
+					<section>
+						<h2>Get bored</h2>
+					</section>
+					<section>
+						<h2>Get married, have children</h2>
+					</section>
+					<section>
+						<h2>Become busier</h2>
+					</section>
+					<section>
+						<h2>and some... Leave</h2>
+						<p>(sad panda face)</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>The Core Team</h2>
+					<h4>Have a constant dream and a passion to make things better</h4>
+				</section>
+
+				<section>
+					<h2>This is a summary of the things we dreamt about</h2>
+					<p>
+						and made its way into the code
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello PHP 5.4</h2>
+				</section>
+
+				<section>
+					<h2>Namespaces</h2>
+					<p>
+						We hate \ (wrong slash) but we finally converted the virtual packages into namespaces
+					</p>
+					<pre><code>if (strpos($class, '\\') !== false)</code></pre>
+					<p>Yes, we'll keep using the plugin syntax and save from writing things like that</p>
+				</section>
+
+				<section>
+					<h2>New unified config</h2>
+					<p>Configuration is passed directly to the classes that are interested about them</p>
+					<p>Bye, Bye DATABASE_CONFIG</p>
+				</section>
+
+				<section>
+					<h2>Composer support out of the box</h2>
+				</section>
+
+				<section>
+					<h2>Faster, better router</h2>
+					<p>Reverse routing got extremely fast and now it is possible to have named routes!</p>
+				</section>
+
+				<section>
+					<h2>Routing prefixes using namespaces</h2>
+					<p>Instead of UsersController::admin_index() you will have a separate Admin\UsersController::index()</p>
+				</section>
+
+				<section>
+					<h2>Faster, consistent and leaner event manager</h2>
+				</section>
+
+				<section>
+					<h2>Feature rich HttpSocket class</h2>
+				</section>
+
+				<section>
+					<h2>New Query builder</h2>
+					<p>Create queries using a fluent interface with automatic type conversion</p>
+					<pre><code>
+$union = (new Query($connection))
+	->select(['id', 'title'])
+	->from(['a' => 'articles']);
+
+$results = (new Query($connection))
+	->select(['id', 'comment'])
+	->from(['c' => 'comments'])
+	->where(['created >=', new DateTime('1 day ago')])
+	->union($union)
+	->execute();
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Smart SQL dialect translation</h2>
+					<p>You can use this in both PostgreSQL and MySQL</p>
+					<pre><code>
+$query = (new Query($connection))->select(function($q) {
+	return [
+		'id',
+		'full_name' => $q->concat(['first_name', ' ', 'last_name'])
+	]
+});</code></pre>
+				</section>
+
+				<section>
+					<h2>Smart association eager loading</h2>
+					<p>This will use a single query</p>
+					<pre><code>
+$table = Table::build('author');
+$table->hasMany('article', [
+	'property' => 'articles',
+	'strategy' => 'subquery',
+	'sort' => ['article.id' => 'asc']
+]);
+$results = $table->find('all')->contain('article')->toArray();</code></pre>
+				</section>
+
+				<section>
+					<h2>Chainable custom finders</h2>
+					<p>Woot!?</p>
+					<pre><code>
+$articles->latest()->popular()->list()->toArray();</code></pre>
+				</section>
+
+				<section>
+					<h2>Result streaming</h2>
+				</section>
+
+				<section>
+					<h2>Stoppable finds</h2>
+					<p>Before find callbacks can stop the query from being executed and return cached results</p>
+				</section>
+
+				<section>
+					<h2>Map-Reduce</h2>
+				</section>
+
+				<section>
+					<h2>Schema Migrations</h2>
+				</section>
+
+				<section>
+					<h2>And much, much more</h2>
+				</section>
+
+				<section>
+					<h2>Welcome to CakeFest</h2>
+					<p>This is the right place to figure out where we are heading</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
