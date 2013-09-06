@@ -6,7 +6,7 @@ If your project doesn't fulfill all these requirements yet, just poke us, and we
 
 - Must be compatible with CakePHP 2.3 and higher
 - Must conform to the CakePHP code guidelines
-- Must have at least 75% code coverage
+- Must have at least 50% code coverage
 - Must use Travis for automated testing on commits
 - Must use Coveralls to track code coverage
 - Must provide composer support
@@ -16,19 +16,19 @@ If your project doesn't fulfill all these requirements yet, just poke us, and we
 - Must have well documented user guide with examples
 - Must have high code quality (e.g. defensive coding, check return values and more)
 - Must convert any GitHub wiki pages to gh-pages or README.md
-- Must comply with semantic versioning
+- Must comply with semantic versioning (www.semver.org)
 - Must use GitHub releases & git tags, with descriptive changelogs
 - Must use `master` for stable release, `develop` for integration branch and feature branches for the rest
-- Must not have failing tests in `master` and `develop`
+- Must not have failing tests in `master`
 - Must use MIT license
 
 # Bonus goals 
 
 Can be fulfilled whenever, and even never
 
-- Should support PHP 5.3
+- Should support PHP >= 5.3
 - Should have real documentation in gh-pages branch (url will be `friendsofcake.com/<project name>`on GH)
-- Should have 90%+ code coverage
+- Should have 80%+ code coverage
 - Should do primary development through Pull Requests for easier peer review
 - Should publish a roadmap
 - Should use milestones for issues
