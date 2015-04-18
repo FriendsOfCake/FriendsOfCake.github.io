@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Friends Of Cake
+   ========================================================================== */
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, p.lead {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000;
+}
+p.lead {
+  font-size: 1.70em;
+  text-shadow: 1px 1px #cecece;
+}
+h3 {
+  margin: 0;
+  line-height: 180%;
+}
+h4 {
+  font-size: 1.56em;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.64em;
+  font-weight: 300;
+  color: #333;
+}
+footer {
+  font-size: .875em;
+  text-align: center;
+}
+
+/* NAVIGATION */
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-clear {
+  background: rgba(255, 255, 255, .4);
+}
+.navbar-brand {
+  color: #333;
+}
+
+/* MASTHEAD */
+.jumbotron {
+  background: url(../img/jumbotron.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin-top: -50px;
+  margin-bottom: 0;
+}
+.jumbotron .logo {
+  width: 100%;
+  margin-top: 24px;
+}
+
+/* PAGE ELEMENTS */
+.fa-twitter {
+  color: #4099FF;
+}
+.bg-grey {
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+#twitter-widget-0 {
+  width: 100%!important;
+  margin-top: 20px!important;
+}
+.pane-featurettes .well,
+.white-panel,
+body {
+  background: rgb(229,229,229); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.pane-featurettes {
+  padding: 14px 0;
+  margin: 0;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #98998
+}
+.pane-featurettes .well,
+.white-panel {
+  border-radius: 8px;
+  border-top: 1px solid #fefefe;
+  border-left: 1px solid #efefef;
+  border-bottom: 1px solid #aeaeae;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.pane-featurettes .well {
+  margin: 0;
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .pane-featurettes .well {
+    margin-bottom: 14px;
+  }
+}
+
+/* ===============================
+   PROJECTS / PINBOOT
+   ============================== */
+#pinBoot {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 24px;
+}
+.white-panel {
+  position: absolute;
+  padding: 10px;
+}
+.white-panel h1 {
+  font-size: 1em;
+}
+.white-panel h1 a {
+  color: #A92733;
+}
+.white-panel:hover {
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-top: -5px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
