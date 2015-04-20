@@ -1,14 +1,20 @@
 language: ruby
 rvm:
 - 2.1
-script: ./script/cibuild
 
-# branch whitelist
+cache: bundler
+
 branches:
   only:
   - gh-pages     # test the gh-pages branch
-  - use_travis   # feature branch
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+install:
+  - gem install bundler
+
+script:
+  - bundle install --jobs=3 --retry=3
+  - bundle exec jekyll build
