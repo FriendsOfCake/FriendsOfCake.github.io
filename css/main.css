@@ -44,8 +44,9 @@ footer {
 .jumbotron {
   background: url(../img/jumbotron.jpg) no-repeat center center fixed;
   background-size: cover;
-  margin-top: -50px;
-  margin-bottom: 0;
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
 }
 .jumbotron .logo {
   width: 100%;
