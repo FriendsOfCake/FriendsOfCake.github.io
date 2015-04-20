@@ -1,4 +1,4 @@
-#friendsofcake.com
+#friendsofcake.com [![Build Status](https://travis-ci.org/chrisvogt/friendsofcake.com.svg)](https://travis-ci.org/chrisvogt/friendsofcake.com)
 
 [![Join the chat at https://gitter.im/chrisvogt/friendsofcake.com](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chrisvogt/friendsofcake.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -6,7 +6,10 @@ This repository holds the friendsofcake.com website, currently hosted through [G
 
 ### Development Notes
 
-Uses [Bower](http://bower.io/) for package management. Run `bower install` after cloning this repository to download the required packages.
+Uses [Jekyll](https://help.github.com/articles/using-jekyll-with-pages/) and [Bower](http://bower.io/).
+
+- Run `bower install` after cloning this repository to download the required packages.
+- Do `jekyll serve` to run locally.
 
 ### Screenshot
 
