@@ -91,8 +91,8 @@ body {
 .pane-featurettes {
   padding: 14px 0;
   margin: 0;
+  border-bottom: 1px solid #fefefe;
   border-top: 1px solid #cecece;
-  border-bottom: 1px solid #98998
 }
 .pane-featurettes .logo {
   width: 69%;
