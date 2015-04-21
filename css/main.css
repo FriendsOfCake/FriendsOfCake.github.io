@@ -48,6 +48,10 @@ footer {
 .navbar-brand {
   color: #333;
 }
+.navbar-toggle {
+  margin-top: 10px;
+  padding: 0;
+}
 .navbar-social li {
   border-left: 1px solid #bebebe;
   border-right: 1px solid #bebebe;
