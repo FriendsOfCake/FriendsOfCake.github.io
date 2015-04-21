@@ -5,57 +5,47 @@ title: migrations
 
 # MIGRATION GUIDE
 
-List of steps to take to comply to the requirements
+These are steps you can take to help comply with the Friends Of Cake [project requirements](requirements.html).
 
-## Setup Travis CI
+## Continuous integration with TravisCI
+- Add a `.travis.yml` file to the root of your project and [activate the GitHub webhook](http://docs.travis-ci.com/user/getting-started/#Step-two%3A-Activate-GitHub-Webhook).
 
-- Add a `.travis.yml` file to the root of your project and activate the github hook for travis, see
-http://about.travis-ci.org/docs/user/getting-started/#Step-one%3A-Sign-in
-Example `.travis.yml` file for cakephp plugin: https://github.com/FriendsOfCake/crud/blob/develop/.travis.yml
-- Ensure your matrix includes the PHP versions from the boarding requirements
-- Ensure your matrix inlcudes the CakePHP versions from the boarding requirements
-- Please keep Notifications: email as `false` to avoid spamming (perhaps add irc notifications?)
+- Ensure your matrix includes the PHP versions from the boarding requirements.
+- Ensure your matrix includes the CakePHP versions from the boarding requirements.
+- Please keep `Notifications: email` set to `false` to avoid spamming (_perhaps add IRC notifications?_).
 
-## CakePHP code guidelines
+[Review an example `.travis.yml`](https://github.com/FriendsOfCake/crud/blob/develop/.travis.yml) from a Friends Of Cake project.
 
-phpcs --standard=CakePHP is used to check coding standards
-More info: https://github.com/cakephp/cakephp-codesniffer
-Ensure the travis build matrix includes a PHPCS job, see the above eample `.travis.yml`
+## CakePHP code style guide
+*phpcs --standard=CakePHP* is used to check coding standards. More information is available on GitHub at [cakephp-codesniffer](https://github.com/cakephp/cakephp-codesniffer).
 
-## Setup composer support
+## Composer support
+- Add a `composer.json` file to the root of your project, see http://getcomposer.org/doc/04-schema.md
+- Set the [vendor part of your name property](https://getcomposer.org/doc/04-schema.md#name) to `friendsofcake` (i.e. friendsofcake/yet-another-wonderful-name).
+- Ensure you [use the `installer-name` extra](https://github.com/composer/installers#custom-install-names) as Composer package names don't allow uppercases, yet CakePHP expects your plugin folder name to be CamelCased.
 
-- Add a composer.json file to the root of your project, see http://getcomposer.org/doc/04-schema.md
-- Use `friendsofcake` as vendorname
-- Ensure you use installer-name, as composer package names don't allow uppercases, but CakePHP expects your
-plugin foldername to be CamelCased
-Example file: https://github.com/FriendsOfCake/crud/blob/develop/composer.json
+[Review an example `composer.json`](https://github.com/FriendsOfCake/crud/blob/develop/composer.json) from a Friends Of Cake project.
 
-## Code coverage and coveralls
-
-- Write tests :)
-- Add `.coveralls.yml` file to the root of your project
-- Ensure travis handles coveralls (see the above example `.travis.yml`)
+## Code coverage with Coveralls
+- Write tests. 🙇
+- Add a `.coveralls.yml` file to the root of your project.
+- Ensure Travis handles Coveralls (see Travis example above).
 
 ## Packagist
-
-Submit the package to packagist, https://packagist.org/packages/submit
+Submit the package to [Packagist](https://packagist.org/).
 
 ## MIT license
+Add a `LICENSE.txt` file to the root of your project.
 
-Add LICENSE.txt to the root of your project
-Example: https://github.com/FriendsOfCake/crud/blob/develop/LICENSE.txt
+[Review an example `LICENSE.txt`](https://github.com/FriendsOfCake/crud/blob/develop/LICENSE.txt) from a Friends Of Cake project.
 
 ## Documenation
-
 - Must have well documented code (docblocks, @annotations etc)
-- Must have well documented user guide with examples
-- GitHub wiki pages should not be used for documentation. Use gh-pages or README.md
+- Must have well documented user guide with examples.
+- GitHub Wiki pages should not be used for documentation. Use gh-pages or README.md.
 
 ## GitHub releases
-
-Use GitHub releases and git atgs using semantic versioning with descriptive changelogs
-More info: https://help.github.com/articles/creating-releases
+[Releases](https://help.github.com/articles/about-releases/) and [Tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging) must use [semantic versioning](http://semver.org/) with descriptive changelogs. Head to GitHub for more [information on creating releases](https://help.github.com/articles/creating-releases).
 
 ## Branching
-
-- Must use `master` for stable release, `develop` for integration branch and feature branches for the rest
+- Must use `master` for stable release, `develop` for integration branch and feature branches for the rest.
