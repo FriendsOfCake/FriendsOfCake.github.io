@@ -18,6 +18,13 @@ h3 {
 h4 {
   font-size: 1.56em;
 }
+a {
+  color: #19494a;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.64em;
@@ -30,14 +37,25 @@ footer {
 }
 
 /* NAVIGATION */
-.navbar {
+.navbar, .navbar a {
   margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .navbar-clear {
   background: rgba(255, 255, 255, .4);
 }
 .navbar-brand {
   color: #333;
+}
+.navbar-social li {
+  border-left: 1px solid #bebebe;
+  border-right: 1px solid #bebebe;
+  font-size: 1.2em;
+}
+.navbar-social li a:hover {
+  background: #dedede;
+  background: rgba(222, 222, 222, .6);
 }
 
 /* MASTHEAD */

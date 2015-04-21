@@ -1,3 +1,8 @@
+---
+layout: default
+title: requirements
+---
+
 # Boarding requirements for a FoC project
 
 These requirements must be fulfilled within a month of boarding FoC
@@ -22,7 +27,7 @@ If your project doesn't fulfill all these requirements yet, just poke us, and we
 - Must not have failing tests in `master`
 - Must use MIT license
 
-# Bonus goals 
+# Bonus goals
 
 Can be fulfilled whenever, and even never
 

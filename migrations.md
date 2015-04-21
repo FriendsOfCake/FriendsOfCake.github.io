@@ -1,3 +1,8 @@
+---
+layout: default
+title: migrations
+---
+
 # MIGRATION GUIDE
 
 List of steps to take to comply to the requirements

@@ -49,11 +49,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">friendsofcake.com</a>
+        <a class="navbar-brand" href="/">friendsofcake.com</a>
       </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="requirements.html">Requirements</a></li>
+          <li><a href="migrations.html">Migrations</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right navbar-social">
+          <li><a href="https://github.com/FriendsOfCake" title="Friends Of Cake on GitHub"><i class="fa fa-github"></i> </a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
   </nav><!-- /.navbar -->
-
+    {% if page.title == 'home' %}
     <div class="container-fluid jumbotron">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
@@ -64,10 +74,12 @@
         </div>
       </div><!-- /.row -->
     </div>
+    {% endif %}
 
   <div class="pane pane-featurettes bg-grey">
     <div class="container">
       <div class="row">
+        {% if page.title == 'home' %}
         <div class="col-md-4">
           <div class="well well-sm">
             <h3>Community</h3>
@@ -77,17 +89,22 @@
         <div class="col-md-4">
           <div class="well well-sm">
             <h3>Commitment</h3>
-            <p>We're building a collection of CakePHP plugins actively maintained by Friends Of Cake contributors who commit to follow quality standards set forward in <a href="https://github.com/FriendsOfCake/manifesto" title="A Cake Baker's Manifesto on GitHub"> A Cake Baker's Manifesto</a>. </p>
+            <p>We're building a collection of CakePHP plugins actively maintained by Friends Of Cake contributors who commit to follow quality standards set forward in our <a href="requirements.html" title="Boarding Requirements">boarding requirements</a>. </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="well well-sm">
             <h3>Contribute</h3>
-            <p>Contributions like yours are our lifeblood. Have a plugin that would benefit the community? Ensure that it follows the community guidelines and then submit it for approval. </p>
+            <p>Contributions like yours are our lifeblood. Have a plugin that would benefit the community? Once it meets the requirements, read the <a href="migrations.html" title="Migration Guide">migration guide</a> to learn how to prepare it for approval. </p>
           </div>
         </div>
-      </div><!-- /.container -->
-    </div>
+        {% else %}
+        <div class="col-md-4 col-md-offset-4">
+          <img src="img/FOC.png" width="100%" class="logo" alt="Friends Of Cake" />
+        </div>
+        {% endif %}
+      </div>
+    </div><!-- /.container -->
   </div><!-- /.pane -->
 
   <div class="pane">
