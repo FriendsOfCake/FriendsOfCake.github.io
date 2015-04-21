@@ -75,24 +75,7 @@ footer {
   margin-top: 24px;
 }
 
-/* PAGE ELEMENTS */
-.fa-twitter {
-  color: #4099FF;
-}
-.bg-grey {
-  background: rgb(255,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-}
-#twitter-widget-0 {
-  width: 100%!important;
-  margin-top: 20px!important;
-}
+/* FEATURETTES */
 .pane-featurettes .well,
 .white-panel,
 body {
@@ -111,6 +94,10 @@ body {
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #98998
 }
+.pane-featurettes .logo {
+  width: 69%;
+  margin: 0 auto;
+}
 .pane-featurettes .well,
 .white-panel {
   border-radius: 8px;
@@ -127,6 +114,25 @@ body {
   .pane-featurettes .well {
     margin-bottom: 14px;
   }
+}
+
+/* PAGE ELEMENTS */
+.fa-twitter {
+  color: #4099FF;
+}
+.bg-grey {
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+#twitter-widget-0 {
+  width: 100%!important;
+  margin-top: 20px!important;
 }
 
 /* ===============================
