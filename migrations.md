@@ -3,7 +3,7 @@ layout: default
 title: migrations
 ---
 
-# MIGRATION GUIDE
+# Migration Guide
 
 These are steps you can take to help comply with the Friends Of Cake [project requirements](requirements.html).
 
