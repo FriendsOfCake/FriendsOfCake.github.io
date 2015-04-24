@@ -1,6 +1,6 @@
 #friendsofcake.com
 
-[![Build Status](https://travis-ci.org/chrisvogt/FriendsOfCake.github.io.svg)](https://travis-ci.org/chrisvogt/FriendsOfCake.github.io) [![Code Climate](https://codeclimate.com/github/chrisvogt/FriendsOfCake.github.io/badges/gpa.svg)](https://codeclimate.com/github/chrisvogt/FriendsOfCake.github.io)
+[![Build Status](https://travis-ci.org/chrisvogt/FriendsOfCake.github.io.svg?branch=gh-pages)](https://travis-ci.org/chrisvogt/FriendsOfCake.github.io) [![Code Climate](https://codeclimate.com/github/chrisvogt/FriendsOfCake.github.io/badges/gpa.svg)](https://codeclimate.com/github/chrisvogt/FriendsOfCake.github.io)
 
 This repository holds the [friendsofcake.com](http://friendsofcake.com) website code, currently powered by [GitHub Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com/).
 
