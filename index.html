@@ -7,9 +7,8 @@ title: home
 <p>Our intention is for all projects to be fresh and relevant; therefore, any project that loses activity for six months will be archived.</p>
 
 <div class="row">
-  <div class="col-xs-12">
     {% for project in site.data.projects %}
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-12 col-lg-6">
         <div class="thumbnail">
             <h4>{{ project.name }}</h4>
             <p class="brief">{{ project.brief }}</p>
@@ -18,7 +17,6 @@ title: home
         </div>
     </div>
     {% endfor %}
-  </div>
 </div>
 
 <section>
