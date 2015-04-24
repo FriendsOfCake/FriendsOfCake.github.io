@@ -6,11 +6,22 @@ This repository holds the [friendsofcake.com](http://friendsofcake.com) website 
 
 ### Development Notes
 
+#### Setup a local instance
+
 This project is setup to use [Bundler](http://bundler.io/), [Jekyll](http://jekyllrb.com/), and [Bower](http://bower.io/). After cloning this repository, run:
 
 1. `bundle install` to download dependencies required to build.
 2. `bower install` to download front-end packages into the `./components` directory.  
 3. `jekyll serve` to run locally or `jekyll build` to generate into `./site` directory.
+
+#### Development workflow
+
+The workflow for contributing to this project is as follows:
+
+1. Create a fork of the repository.
+2. Base your feature branch on the `develop` repository.
+3. Open a [new issue](https://github.com/FriendsOfCake/FriendsOfCake.github.io/issues) describing the bug, feature, or work you will be contributing.
+3. Submit pull requests against the `develop` repository.
 
 ### Screenshot
 
