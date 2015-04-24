@@ -1,0 +1,39 @@
+- name: CRUD
+  github: https://github.com/FriendsOfCake/crud
+  brief: CakePHP Application development on steroids - rapid prototyping &amp; scaffolding with production ready code - JSON APIs and more.
+
+- name: app-template
+  github: https://github.com/FriendsOfCake/app-template
+  brief: A CakePHP application skeleton for new projects. Pre-packaged with community-approved plug-ins.
+
+- name: Authenticate
+  github: https://github.com/FriendsOfCake/Authenticate
+  brief: Plugin containing some authenticate classes for AuthComponent.
+
+- name: Bootstrap UI
+  github: https://github.com/FriendsOfCake/bootstrap-ui
+  brief: Transparently use Twitter Bootstrap 3 with CakePHP 3.
+
+- name: Travis
+  github: https://github.com/FriendsOfCake/travis
+  brief: Easy Travis integration for CakePHP plugins.
+
+- name: Search
+  github: https://github.com/FriendsOfCake/search
+  brief: A search module for CakePHP applications.
+
+- name: CakePdf
+  github: https://github.com/FriendsOfCake/CakePdf
+  brief: CakePHP plugin for creating and/or rendering PDFs, supporting several popular PDF engines.
+
+- name: CSV View
+  github: https://github.com/FriendsOfCake/cakephp-csvview
+  brief: Plugin to quickly enable CSV output of your model data using a CSV View.
+
+- name: Vagrant Chef
+  github: https://github.com/FriendsOfCake/vagrant-chef
+  brief: Vagrant Chef creates a Vagrant installation for CakePHP.
+
+- name: Awesome CakePHP
+  github: https://github.com/FriendsOfCake/awesome-cakephp
+  brief: A curated list of amazingly awesome CakePHP plugins, resources and shiny things.
