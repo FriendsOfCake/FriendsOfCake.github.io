@@ -5,11 +5,14 @@
 /* TYPOGRAPHY */
 h1, h2, h3, h4, p.lead {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #000;
 }
 p.lead {
   font-size: 1.70em;
   text-shadow: 1px 1px #cecece;
+}
+h2 {
+  font-size: 2.4em;
+  color: #19494a;
 }
 h3 {
   margin: 0;
@@ -76,6 +79,16 @@ footer {
 }
 
 /* FEATURETTES */
+.feat .fa {
+  margin-top: 10px;
+  color: #19494a;
+}
+.feat h3 {
+  text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+  font-size: 1.75em;
+  color: #c54753;
+}
+
 .pane-featurettes .well,
 .white-panel,
 body {
