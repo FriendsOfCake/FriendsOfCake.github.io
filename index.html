@@ -5,48 +5,39 @@ title: home
 
 <h2>Our Projects</h2>
 <p>Our intention is for all projects to be fresh and relevant; therefore, any project that loses activity for six months will be archived.</p>
-<section id="pinBoot">
-  <article class="white-panel">
-    <h4>CRUD <a href="https://github.com/FriendsOfCake/crud" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>crud</em></a></h4>
-    <p>CakePHP Application development on steroids - rapid prototyping &amp; scaffolding with production ready code - JSON APIs and more. </p>
-  </article>
-  <article class="white-panel">
-    <h4>app-template <a href="https://github.com/FriendsOfCake/app-template" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>app-template</em></a></h4>
-    <p>A CakePHP application skeleton for new projects. Pre-packaged with community-approved plug-ins. </p>
-  </article>
-  <article class="white-panel">
-    <h4>Authenticate <a href="https://github.com/FriendsOfCake/Authenticate" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>authenticate</em></a></h4>
-    <p>Plugin containing some authenticate classes for AuthComponent. </p>
-  </article>
-  <article class="white-panel">
-    <h4>Bootstrap UI <a href="https://github.com/FriendsOfCake/bootstrap-ui" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>bootstrap-ui</em></a></h4>
-    <p>Transparently use Twitter Bootstrap 3 with CakePHP 3. </p>
-  </article>
-  <article class="white-panel">
-    <h4>Travis <a href="https://github.com/FriendsOfCake/travis" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>travis</em></a></h4>
-    <p>Easy travis integration for CakePHP plugins. </p>
-  </article>
-  <article class="white-panel">
-    <h4>Search <a href="https://github.com/FriendsOfCake/search" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>search</em></a></h4>
-    <p>A search module for CakePHP applications. </p>
-  </article>
-  <article class="white-panel">
-    <h4>CakePdf <a href="https://github.com/FriendsOfCake/CakePdf" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>CakePdf</em></a></h4>
-    <p>CakePHP plugin for creating and/or rendering PDFs, supporting several popular PDF engines. </p>
-  </article>
-  <article class="white-panel">
-    <h4>CSV View <a href="https://github.com/FriendsOfCake/cakephp-csvview" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>cakephp-csvview</em></a></h4>
-    <p>Plugin to quickly enable CSV output of your model data using a CSV View. </p>
-  </article>
-  <article class="white-panel">
-    <h4>Vagrant Chef <a href="https://github.com/FriendsOfCake/vagrant-chef" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>vagrant-chef</em></a></h4>
-    <p>Vagrant Chef creates a Vagrant installation for CakePHP. </p>
-  </article>
-  <article class="white-panel">
-    <h4>Awesome CakePHP <a href="https://github.com/FriendsOfCake/awesome-cakephp" class="btn btn-xs btn-default pull-right"><i class="fa fa-github"></i> <em>awesome-cakephp</em></a></h4>
-    <p>A curated list of amazingly awesome CakePHP plugins, resources and shiny things. </p>
-  </article>
-</section>
+
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="project-list">
+      {% for project in site.data.projects %}
+      <li>
+        <time datetime="2014-07-20 0000">
+          <span class="day">8</span>
+          <span class="month">Jul</span>
+          <span class="year">2014</span>
+          <span class="time">12:00 AM</span>
+        </time>
+        <div class="info">
+          <h2 class="title">{{ project.name }}</h2>
+          <p class="desc">{{ project.brief }}</p>
+          <ul>
+            <li style="width:50%;"><a href="#website"><span class="fa fa-github"></span> View on GitHub</a></li>
+            <li style="width:50%;"><span class="fa fa-star"></span> 25</li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+            <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+            <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+          </ul>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
 <section>
   <h2>Get In Touch</h2>
   <p>Do you have a plugin or project that would benefit the community? Get in touch to discuss adopting it into Friends Of Cake, increasing its visibility and reach.</p>
