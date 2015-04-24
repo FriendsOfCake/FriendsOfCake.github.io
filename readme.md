@@ -1,6 +1,6 @@
-#friendsofcake.com [![Build Status](https://travis-ci.org/FriendsOfCake/FriendsOfCake.github.io)](https://travis-ci.org/FriendsOfCake/FriendsOfCake.github.io)
+#friendsofcake.com
 
-[![Join the chat at https://gitter.im/chrisvogt/friendsofcake.com](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im//FriendsOfCake/FriendsOfCake.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/chrisvogt/FriendsOfCake.github.io.svg)](https://travis-ci.org/chrisvogt/FriendsOfCake.github.io) [![Code Climate](https://codeclimate.com/github/chrisvogt/FriendsOfCake.github.io/badges/gpa.svg)](https://codeclimate.com/github/chrisvogt/FriendsOfCake.github.io)
 
 This repository holds the [friendsofcake.com](http://friendsofcake.com) website code, currently powered by [GitHub Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com/).
 
@@ -14,4 +14,4 @@ This project is setup to use [Bundler](http://bundler.io/), [Jekyll](http://jeky
 
 ### Screenshot
 
-![friendsofcake.com screenshot](http://i.imgur.com/88J6bV5.gif)
+![friendsofcake.com screenshot](http://i.imgur.com/7r6JKzP.gif)
