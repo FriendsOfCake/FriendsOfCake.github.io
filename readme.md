@@ -26,3 +26,5 @@ The workflow for contributing to this project is as follows:
 ### Screenshot
 
 ![friendsofcake.com screenshot](http://i.imgur.com/7r6JKzP.gif)
+
+<img src="https://cdn.rawgit.com/jekyll/brand/master/jekyll-logo-light-transparent.png" alt="Made with Jekyll" width="140" align="right" /> <img src="http://bower.io/img/bower-logo.svg" alt="Made with Bower" height="70" align="right" />
