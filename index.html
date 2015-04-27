@@ -1,100 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+---
+layout: default
+title: home
+---
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+<h2>Our Projects</h2>
+<p>Our intention is for all projects to be fresh and relevant; therefore, any project that loses activity for six months will be archived.</p>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Friends Of Cake dot com</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/FriendsOfCake">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Friends Of Cake</h1>
-            <h2>The friendly CakePHP community</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3><a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome friend !</h3>
-        <p><strong>Friends Of Cake</strong> is a group of passionate CakePHP developers, working together to improve the CakePHP community and produce high quality CakePHP plugins.</p>
-
-        <h3><a name="community" class="anchor" href="#community"><span class="octicon octicon-link"></span></a>Community</h3>
-        <p>We want to help build an awesome CakePHP community. A community where people work together, unite their efforts, help each other out and be all-round friendly supportive chaps and chappesses.</p>
-        <p>We want to create a community that helps promote and unite the CakePHP community, to everyone's benefit.</p>
-
-        <h3><a name="plugins" class="anchor" href="#plugins"><span class="octicon octicon-link"></span></a>Plugins & Code</h3>
-        <p>We want to create a "go to" place for high quality and well maintained CakePHP plugins.</p>
-        <p>We aim to unite people around some central, common plugins. Rather than having several forks of a plugin, we want to merge them into one awesome plugin that everyone can contribute to.</p>
-
-        <h3><a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h3>
-        <p>
-            Friends Of Cake currently works on these projects:
-            <ul>
-              <li><a href="https://github.com/FriendsOfCake/crud">crud</a> - (formerly jippi/cakephp-crud) - Application development on steroids</li>
-              <li><a href="https://github.com/FriendsOfCake/app-template">app-template</a> - An empty 2.4 cakephp application template, for use with composer</li>
-              <li><a href="https://github.com/FriendsOfCake/builtwithcake">Built With Cake</a> - A website to showcase awesome CakePHP projects</a></li>
-              <li><a href="https://github.com/FriendsOfCake/Authenticate">Authenticate</a> - Authentication classes for AuthComponent</a></li>
-              <li><a href="https://github.com/FriendsOfCake/travis">travis</a> - Easy Travis-ci integration for your CakePHP plugins</a></li>
-            </ul>
-		Our intention is for all projects to be fresh and relevant - as such should any project become obsolete or lose interest from the community (idle for 6 months),
-		it will be archived.</p>
-
-	  <h3><a name="participate" class="anchor" href="#participate"><span class="octicon octicon-link"></span></a>Participate</h3>
-	    <p>Would you like to participate? Friends Of Cake is an open community if you'd like to be a part of it <a href="#contact">contact us</a>
-		to contribute as much or as little as you want to whichever projects interest you. By contributing, you become part of the community.
-		To become a member of <a href="https://github.com/FriendsOfCake?tab=members">FoC</a> all that's required is to contribute regularly to a project</p>
-	    <p>Do <strong>you</strong> have a plugin or project that could benefit the community? Want to increase visibility and make it friendly?
-		<a href="#contact">Get in touch</a>, to discuss adopting it into FoC.</p>
-
-      <h3><a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact us</h3>
-        <p>We hang out in our friendly IRC channel on FreeNode - <strong>#FriendsOfCake</strong></p>
-        <p>You can follow us on twitter too, <a href="http://twitter.com/friendsofcake/">@FriendsOfCake</a></p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/FriendsOfCake">FriendsOfCake</a> can be found on <a href="https://github.com/FriendsOfCake">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Hat tip to <a href="http://friendsofsymfony.github.io/">Friends Of Symfony</a> for the original concept</p>
-        <span class="octocat"></span>
-      </footer>
-
+<div class="row">
+    {% for project in site.data.projects %}
+    <div class="col-sm-12 col-lg-6">
+        <div class="thumbnail">
+            <h4>{{ project.name }}</h4>
+            <p class="brief">{{ project.brief }}</p>
+            <a href="{{ project.github }}" class="btn btn-default col-xs-12" role="button"><i class="fa fa-github"></i> View on GitHub</a>
+            <div class="clearfix"></div>
+        </div>
     </div>
-
-
-  </body>
-</html>
+    {% endfor %}
+</div>
