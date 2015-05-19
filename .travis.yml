@@ -4,10 +4,6 @@ rvm:
 
 cache: bundler
 
-branches:
-  only:
-  - gh-pages     # test the gh-pages branch
-
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
