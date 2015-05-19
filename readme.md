@@ -9,7 +9,7 @@ This repository holds the source code to the [friendsofcake.com](http://friendso
 
 ### Development Notes
 
-#### Sitting up a local instance
+#### Setting up a local instance
 
 This project is setup to use [Bundler](http://bundler.io/), [Jekyll](http://jekyllrb.com/), and [Bower](http://bower.io/).
 
