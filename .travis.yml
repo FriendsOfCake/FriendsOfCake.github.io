@@ -6,7 +6,7 @@ cache: bundler
 
 branches:
   only:
-  - gh-pages     # test the gh-pages branch
+  - master     # test the gh-pages branch
 
 env:
   global:
