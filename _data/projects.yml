@@ -2,6 +2,10 @@
   github: https://github.com/FriendsOfCake/crud
   brief: CakePHP Application development on steroids - rapid prototyping &amp; scaffolding with production ready code - JSON APIs and more.
 
+- name: app-template
+  github: https://github.com/FriendsOfCake/app-template
+  brief: A CakePHP application skeleton for new projects. Pre-packaged with community-approved plug-ins.
+
 - name: Crud Users
   github: https://github.com/FriendsOfCake/crud-users
   brief: Users plugin based on the CRUD action classes.
@@ -9,10 +13,6 @@
 - name: Crud View
   github: https://github.com/FriendsOfCake/crud-view
   brief: Automated admin backend based on your CRUD configuration.
-
-- name: app-template
-  github: https://github.com/FriendsOfCake/app-template
-  brief: A CakePHP application skeleton for new projects. Pre-packaged with community-approved plug-ins.
 
 - name: Authenticate
   github: https://github.com/FriendsOfCake/Authenticate
