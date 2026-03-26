@@ -1,30 +1,10 @@
-- name: CRUD
-  github: https://github.com/FriendsOfCake/crud
-  brief: CakePHP Application development on steroids - rapid prototyping &amp; scaffolding with production ready code - JSON APIs and more.
-
-- name: app-template
-  github: https://github.com/FriendsOfCake/app-template
-  brief: A CakePHP application skeleton for new projects. Pre-packaged with community-approved plug-ins.
-
-- name: Crud Users
-  github: https://github.com/FriendsOfCake/crud-users
-  brief: Users plugin based on the CRUD action classes.
-
-- name: Crud View
-  github: https://github.com/FriendsOfCake/crud-view
-  brief: Automated admin backend based on your CRUD configuration.
-
-- name: Authenticate
-  github: https://github.com/FriendsOfCake/Authenticate
-  brief: Plugin containing some authenticate classes for AuthComponent.
+- name: Awesome CakePHP
+  github: https://github.com/FriendsOfCake/awesome-cakephp
+  brief: A curated list of amazingly awesome CakePHP plugins, resources and shiny things.
 
 - name: Bootstrap UI
   github: https://github.com/FriendsOfCake/bootstrap-ui
   brief: Transparently use Twitter Bootstrap 3 with CakePHP 3.
-
-- name: Travis
-  github: https://github.com/FriendsOfCake/travis
-  brief: Easy Travis integration for CakePHP plugins.
 
 - name: Search
   github: https://github.com/FriendsOfCake/search
@@ -38,10 +18,18 @@
   github: https://github.com/FriendsOfCake/cakephp-csvview
   brief: Plugin to quickly enable CSV output of your model data using a CSV View.
 
-- name: Vagrant Chef
-  github: https://github.com/FriendsOfCake/vagrant-chef
-  brief: Vagrant Chef creates a Vagrant installation for CakePHP.
+- name: CRUD
+  github: https://github.com/FriendsOfCake/crud
+  brief: CakePHP Application development on steroids - rapid prototyping &amp; scaffolding with production ready code - JSON APIs and more.
 
-- name: Awesome CakePHP
-  github: https://github.com/FriendsOfCake/awesome-cakephp
-  brief: A curated list of amazingly awesome CakePHP plugins, resources and shiny things.
+- name: Crud View
+  github: https://github.com/FriendsOfCake/crud-view
+  brief: Automated admin backend based on your CRUD configuration.
+
+- name: Crud Users
+  github: https://github.com/FriendsOfCake/crud-users
+  brief: Users plugin based on the CRUD action classes.
+
+- name: app-template
+  github: https://github.com/FriendsOfCake/app-template
+  brief: A CakePHP application skeleton for new projects. Pre-packaged with community-approved plug-ins.
